@@ -135,7 +135,12 @@ export function StartupAggregator() {
             />
           </div>
           <div className="flex gap-2">
+            <label htmlFor="category-select" className="sr-only">
+              Category
+            </label>
             <select
+              id="category-select"
+              aria-label="Category"
               value={selectedCategory}
               onChange={(e) => setSelectedCategory(e.target.value)}
               className="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"

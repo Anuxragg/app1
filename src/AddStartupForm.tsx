@@ -106,6 +106,8 @@ export function AddStartupForm({ onClose }: AddStartupFormProps) {
               value={formData.name}
               onChange={handleChange}
               required
+              placeholder="Enter startup name"
+              title="Startup Name"
               className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             />
           </div>
@@ -135,6 +137,8 @@ export function AddStartupForm({ onClose }: AddStartupFormProps) {
             onChange={handleChange}
             required
             rows={3}
+            placeholder="Enter startup description"
+            title="Startup Description"
             className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
           />
         </div>
@@ -149,6 +153,7 @@ export function AddStartupForm({ onClose }: AddStartupFormProps) {
               value={formData.category}
               onChange={handleChange}
               required
+              title="Category"
               className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             >
               <option value="">Select category</option>
@@ -169,6 +174,7 @@ export function AddStartupForm({ onClose }: AddStartupFormProps) {
               value={formData.stage}
               onChange={handleChange}
               required
+              title="Stage"
               className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             >
               <option value="">Select stage</option>
@@ -220,6 +226,7 @@ export function AddStartupForm({ onClose }: AddStartupFormProps) {
               name="employees"
               value={formData.employees}
               onChange={handleChange}
+              title="Employees"
               className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             >
               <option value="">Select size</option>
